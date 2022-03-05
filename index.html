@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>空当接龙</title>
+        <link href="styles/index.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        
+
+        <div id="game-board">
+            <div id="topcards">
+                <div id="fc0" class="freecell"></div>
+                <div id="fc1" class="freecell"></div>
+                <div id="fc2" class="freecell"></div>
+                <div id="fc3" class="freecell"></div>
+                <div id="tc0" class="targetcell"></div>
+                <div id="tc1" class="targetcell"></div>
+                <div id="tc2" class="targetcell"></div>
+                <div id="tc3" class="targetcell"></div>
+            </div>
+            <div id="cardlines">
+                <div id="col0" class="cardcolumn" z-index="50"></div>
+                <div id="col1" class="cardcolumn" z-index="50"></div>
+                <div id="col2" class="cardcolumn" z-index="50"></div>
+                <div id="col3" class="cardcolumn" z-index="50"></div>
+                <div id="col4" class="cardcolumn" z-index="50"></div>
+                <div id="col5" class="cardcolumn" z-index="50"></div>
+                <div id="col6" class="cardcolumn" z-index="50"></div>
+                <div id="col7" class="cardcolumn" z-index="50"></div>
+            </div>
+        </div>
+        <div id="game-panel" align="center">
+            <div>
+                时间：<br /><span id="time">00:00:00</span>
+            </div>
+            <input type="button" id="reset" value="重玩本局"> <br />
+            <input type="button" id="new level" value="新游戏"> <br />
+            <!-- <input type="button" id="backward" value="撤回一步"> <br />
+            <input type="button" id="forward" value="前进一步"> -->
+        </div>
+        
+        <script src="scripts/index.js"></script>
+       
+
+    </body>
+</html>
